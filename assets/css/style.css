@@ -1,3 +1,38 @@
-section{
-    background-color: gray;
+.div-secao-principal{
+    background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 1.jpg);
+    background-color: #e5e5e5;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.div-esquerda{
+    width: 100%;
+    height: 100px;
+    top: 80px;
+}
+
+.img-luz{
+    object-position: center;
+    width: 50%;
+    height: 300px;
+    max-width: 430px;
+    min-width: 370px;
+    mix-blend-mode: screen;
+}
+
+.img-mascote{
+    width: 100%;
+    height: 500px;
+    max-width: 580px;
+    min-width: 500px;
+}
+
+.img-logo{
+    object-position: center;
+    width: 100%;
+    height: 350px;
+    max-width: 430px;
+    min-width: 370px;
 }
