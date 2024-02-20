@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page LibrasConnect</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar-personalizado navbar navbar-expand-lg fixed-top navbar-drak d-flex align-items-start">
         <div class="container-fluid">
             <a class="logo-libras" href="#">
                 <img src="assets/img/logo/logo-libas-connect.png" alt="Bootstrap" width="30" height="24">
@@ -17,24 +18,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Inicial">Inicial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link"  href="#Perguntas">Perguntas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Projeto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">Sobre Nós</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <section class="position-relative">
+    <section id="Inicial" class="position-relative">
         <div class="div-secao-principal d-flex justify-content-around">
             <div class="div-esquerda position-absolute">
                 <div class="position-absolute">
@@ -44,15 +45,19 @@
                     <img class="img-logo" src="assets/img/logo/logo-libas-connect.png" alt="Logo">  
                 </div>
             </div>
-            <div class="div-meio position-absolute">l
-                <div>Libas Connect</div>
-                <div>Sinais que Conectam.</div>
+            <div class="div-meio position-relative d-flex flex-column mb-3">
+                <div class="div-libras p-2">Libras<br>Connect</div> 
+                <div class="div-sinais p-2">Sinais que Conectam.</div>
             </div>
-            <div class="div-direita position-absolute">
+            <div class="div-direita position-relative">
                 <img class= "img-mascote" src="assets/img/Personagem/Personagem_cmFundo.png" alt="Mascote">
             </div>
         </div>
     </section>
+    <section id="Perguntas">
+
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

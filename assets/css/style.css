@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    color: black;
+}
+
 .div-secao-principal{
     background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 1.jpg);
     background-color: #e5e5e5;
@@ -11,6 +17,30 @@
     width: 100%;
     height: 100px;
     top: 80px;
+}
+
+.div-meio{
+    width: 100%;
+    height: 500px;
+    top: 200px;
+    left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-libras{
+    width: 50%;
+    height: 50px;
+    font-size: 80px;
+    line-height: 70px;
+    position: absolute;
+}
+
+.div-sinais{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    line-height: 320px;
+    position: absolute;
 }
 
 .img-luz{
@@ -35,4 +65,8 @@
     height: 350px;
     max-width: 430px;
     min-width: 370px;
+}
+
+.Perguntas{
+    height: 600px;
 }
