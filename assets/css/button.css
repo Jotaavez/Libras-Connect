@@ -1,0 +1,19 @@
+.button-secao-principal{
+    position: relative;
+    top: 270px;
+    width: 17%;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    border-radius: 40px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.button-secao-principal:hover{
+    transform: scale(1.05);
+}
