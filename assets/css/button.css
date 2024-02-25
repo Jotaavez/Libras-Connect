@@ -1,23 +1,23 @@
 /* CSS Button da ../../pages/start */
 
-.button-secao-principal{
-    position: relative;
-    top: 270px;
-    width: fit-content;
-    height: fit-content;
-    font-size: 25px;
-    border: none;
-    border-radius: 40px;
-    background-color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 200ms ease-in-out;
+.button-secao-principal {
+  position: relative;
+  top: 270px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 25px;
+  border: none;
+  border-radius: 40px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
 }
 
-.button-secao-principal:hover{
-    transform: scale(1.05);
+.button-secao-principal:hover {
+  transform: scale(1.05);
 }
 
 /* CSS Button da ../../pages/main */

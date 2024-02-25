@@ -1,18 +1,22 @@
 /* CSS Navbar da ../../pages/start */
 
-.navbar-personalizado{
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 2%, transparent);
-    font-size: 110%;
-    min-height: 70px;
-    padding-top: 20px;
+.navbar-personalizado {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255) 2%,
+    transparent
+  );
+  font-size: 110%;
+  min-height: 70px;
+  padding-top: 20px;
 }
 
-.navbar-personalizado a{
-    margin-right: 30px;
-    color: rgb(0, 0, 0);
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+.navbar-personalizado a {
+  margin-right: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* CSS Navbar da ../../pages/main */
