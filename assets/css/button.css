@@ -1,8 +1,10 @@
+/* CSS Button da ../../pages/start */
+
 .button-secao-principal{
     position: relative;
     top: 270px;
-    width: 17%;
-    height: 50px;
+    width: fit-content;
+    height: fit-content;
     font-size: 25px;
     border: none;
     border-radius: 40px;
@@ -17,3 +19,5 @@
 .button-secao-principal:hover{
     transform: scale(1.05);
 }
+
+/* CSS Button da ../../pages/main */

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* CSS da ../../pages/start */
 
 body{
     color: black;
@@ -14,20 +15,48 @@ body{
   }
 
 .div-secao-principal{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 1.jpg);
     background-color: #e5e5e5;
-    min-height: 800px;
-    max-height: 980px;
+    height: fit-content;
+    min-height: 1000px;
     background-size: cover;
     background-position: center;
     color: black;
     align-items: center;
 }
 
+@media screen and (max-width: 1000px){
+    .div-secao-principal{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
 .div-esquerda{
-    width: 100%;
+    width: 30px;
     height: 100px;
     top: 80px;
+    margin-top: -400px;
+}
+
+.img-luz{
+    object-position: center;
+    width: 50%;
+    height: 400px;
+    max-width: 930px;
+    min-width: 470px;
+    mix-blend-mode: screen;
+}
+
+.img-logo{
+    object-position: center;
+    width: 100%;
+    height: 450px;
+    max-width: 470px;
+    min-width: 470px;
 }
 
 .div-meio{
@@ -38,6 +67,15 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    position: absolute;
+}
+
+.img-mascote{
+    width: 70%;
+    height: 550px;
+    max-width: 700px;
+    min-width: 550px;
+    margin-right: 50px;
 }
 
 .div-libras{
@@ -58,51 +96,40 @@ body{
     position: absolute;
 }
 
-.img-luz{
-    object-position: center;
-    width: 50%;
-    height: 300px;
-    max-width: 430px;
-    min-width: 370px;
-    mix-blend-mode: screen;
-}
-
-.img-mascote{
-    width: 100%;
-    height: 550px;
-    max-width: 580px;
-    min-width: 500px;
-    margin-right: 150px;
-}
-
-.img-logo{
-    object-position: center;
-    width: 100%;
-    height: 350px;
-    max-width: 430px;
-    min-width: 370px;
-}
-
 .div-secao-ajuda{
-    min-height: 800px;
-    max-height: 980px;
-    color: black;
+    width: fit-content;
+    height: fit-content;
+    min-height: 1000px;
+    color: rgb(255, 255, 255);
     background-color: white;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px){
+    .div-secao-ajuda{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .div-titulo-ajuda{
-    margin-top: 40px;
+    color: black;
+    margin-top: 60px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 80px;
+    margin-bottom: 60px;
     text-transform: uppercase;
 }
 
 .div-perguntas{
-    margin-left: 70px;
-    margin-right: 70px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 80px;
 }
 
 .div-titulo-pergunta{
@@ -121,30 +148,40 @@ body{
     margin-bottom: 10px;
 }
 
-.div-projeto{
+.div-secao-projeto{
+    width: fit-content;
+    height: fit-content;
     background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 2.jpg);
     background-color: #e5e5e5;
-    min-height: 800px;
-    max-height: 980px;
+    min-height: 1000px;
     background-size: cover;
     background-position: center;
     color: black;
-    align-items: flex-start;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1250px){
+    .div-secao-projeto{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .div-projeto-titulo{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 80px;
+    font-size: 100px;
     text-transform: uppercase;
     margin-left: 150px;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 .div-projeto-conteudo{
     align-items: center;
-    margin-top: 150px;
+    margin-top: 250px;
     width: 800px;
     height: 450px;
     background-color: #ffffff;
@@ -164,10 +201,20 @@ body{
 }
 
 .div-secao-sobre{
-    min-height: 800px;
-    max-height: 980px;
-    color: black;
+    width: fit-content;
+    height: fit-content;
+    min-height: 1000px;
+    color: rgb(255, 255, 255);
     background-color: white;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 850px){
+    .div-secao-sobre{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .div-sobre-titulo{
@@ -178,24 +225,24 @@ body{
     font-size: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    color: black;
 }
 
 .div-sobre-conteudo{
+    color: black;
     margin-top: 200px;
 }
-
 .div-sobre-imagem{
-    width: 100%;
-    height: 500px;
-    max-width: 580px;
-    min-width: 500px;
-    margin-left: 150px;
     margin-top: -100px;
+}
+
+.img-sobre{
+    margin-left: 50px;
 }
 
 .div-sobre-texto{
     margin-top: 35px;
-    margin-left: 50px;
+    margin-left: -90px;
     margin-right: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -206,3 +253,5 @@ body{
     width: 550px;
     height: 450px;
 }
+
+/* CSS da ../../pages/main */
