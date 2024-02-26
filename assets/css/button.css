@@ -2,7 +2,8 @@
 
 .button-secao-principal {
   position: relative;
-  top: 270px;
+  top: 250px;
+  left: -20px;
   width: fit-content;
   height: fit-content;
   font-size: 25px;
@@ -10,7 +11,7 @@
   border-radius: 40px;
   background-color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   align-items: center;
   cursor: pointer;
   transition: transform 200ms ease-in-out;
@@ -20,4 +21,92 @@
   transform: scale(1.05);
 }
 
+.button-secao-principal {
+  width: 200px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-secao-principal:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-secao-principal:focus {
+  outline: none;
+}
+
+.button-secao-principal {
+  background-image: linear-gradient(
+    to right,
+    #6e99ff,
+    #a154ff,
+    #3897ff,
+    #a085ff
+  );
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
 /* CSS Button da ../../pages/main */
+
+.button-main-voltar {
+  box-shadow: 2.1px 1.7px 2.7px rgba(0, 0, 0, 0.037),
+    5.2px 4.3px 6.9px rgba(0, 0, 0, 0.051),
+    10.6px 8.7px 14.2px rgba(0, 0, 0, 0.063),
+    21.9px 17.9px 29.2px rgba(0, 0, 0, 0.079),
+    60px 49px 80px rgba(0, 0, 0, 0.13);
+}
+
+.button-main-voltar {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-main-voltar:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-main-voltar:focus {
+  outline: none;
+}
+
+.button-main-voltar {
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
