@@ -2,7 +2,7 @@
 
 ## **Aprenda Libras de Forma Dinâmica e Moderna!**
 
-Seja bem-vindo(a) ao **Libras Connect**, o seu site de aprendizado da **Língua Brasileira de Sinais (Libras)**. Aqui, oferecemos uma experiência única para discentes, docentes da instituição IFPA Campus Ananindeua.
+Seja bem-vindo(a) ao **Libras Connect**, o seu site de aprendizado da **Língua Brasileira de Sinais (Libras)**. Aqui, oferecemos uma experiência única para discentes e docentes da instituição IFPA Campus Ananindeua.
 
 ### **Recursos**
 

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* CSS da ../../pages/start */
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+/* Essa fonte é ultilizada nos titulos dos modulos*/
 
 body {
   color: black;
@@ -35,30 +37,6 @@ body {
   }
 }
 
-.div-esquerda {
-  width: 30px;
-  height: 100px;
-  top: 80px;
-  margin-top: -400px;
-}
-
-.img-luz {
-  object-position: center;
-  width: 50%;
-  height: 400px;
-  max-width: 930px;
-  min-width: 470px;
-  mix-blend-mode: screen;
-}
-
-.img-logo {
-  object-position: center;
-  width: 100%;
-  height: 450px;
-  max-width: 470px;
-  min-width: 470px;
-}
-
 .div-meio {
   width: 100%;
   height: 600px;
@@ -68,13 +46,14 @@ body {
   font-weight: 400;
   font-style: normal;
   position: absolute;
+  margin-left: -250px;
 }
 
 .img-mascote {
   width: 70%;
-  height: 550px;
-  max-width: 700px;
-  min-width: 550px;
+  height: 700px;
+  max-width: 800px;
+  min-width: 700px;
   margin-right: 50px;
 }
 
@@ -83,7 +62,7 @@ body {
   height: 50px;
   font-size: 120px;
   line-height: 95px;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
 }
 
@@ -269,15 +248,503 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  width: 550px;
+  width: 800px;
   height: 450px;
 }
 
 /* CSS da ../../pages/main */
+.body-modulos {
+  background-color: #e5d7ff;
+}
 
 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Modulo 1 */
+
+.titulo-modulo1 {
+  margin-top: 50px;
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+.item-modulo1-tema1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m1tema1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo1-tema2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-m1tema2 {
+  height: 136px;
+  width: 175px;
+}
+
+.titulo-m1tema2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo1-tema3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m1tema3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo1-tema4 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m1tema4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Modulo 2 */
+
+.titulo-modulo2 {
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
+}
+
+.item-modulo2-tema1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m2tema1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo2-tema2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m2tema2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo2-tema3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m2tema3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo2-tema4 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m2tema4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Modulo 3 */
+
+.titulo-modulo3 {
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+.item-modulo3-tema1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m3tema1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo3-tema2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-m3tema2 {
+  height: 136px;
+  width: 175px;
+}
+
+.titulo-m3tema2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo3-tema3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m3tema3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo3-tema4 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m3tema4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Modulo 4 */
+
+.titulo-modulo4 {
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
+}
+
+.item-modulo4-tema1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m4tema1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo4-tema2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m4tema2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo4-tema3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m4tema3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-modulo4-tema4 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-m4tema4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.div-divisor {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #746efe;
+  width: 1130px;
+  height: 5px;
+  border-radius: 40px;
+}
+
+/* Musica */
+
+.grid-musica {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 200px;
   place-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titulo-musica {
+  margin-top: 50px;
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+.item-musica1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-musica1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-musica2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-musica2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-musica3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-musica3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SinaisCast */
+
+.grid-sinaiscast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titulo-sinaiscast {
+  margin-top: 50px;
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+  color: #5e17eb;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+.item-episodio1 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-episodio1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-episodio2 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-episodio2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.item-episodio3 {
+  margin-top: 150px;
+  height: 180px;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-episodio3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
