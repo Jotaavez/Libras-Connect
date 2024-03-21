@@ -21,21 +21,14 @@
             Modulo 1
         </div>
         <div class="grid"> <!-- Responsável por Listar os módulos -->
-            <button class="button-mod1-tem1 d-flex justify-content-center">
-                <i class="item-modulo1-tema1 position-relative d-flex flex-column mb-2" href="abrir-conteudo">
-                    <div class="img-tema1 p-2"><img src="../../assets/img/icones-modulos/modulo1/modulo1-tema1.png"
-                            alt="Modulo1 Tema1">
-                    </div>
-                    <div class="titulo-m1tema1 p-2">Alfabeto</div>
-                    <div class="conteudo-mod1-tem1">
-                    </div>
-                </i>
-            </button>
-            <dialog>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe ipsum vitae, exercitationem
-                minima ipsam, explicabo iste veritatis soluta fuga, ex quis qui nisi iure accusantium iusto
-                delectus. Fugit, possimus mollitia?
-            </dialog>
+            <i onclick="abrirModal()" class="item-modulo1-tema1 position-relative d-flex flex-column mb-2">
+                <div class="img-tema1 p-2"><img src="../../assets/img/icones-modulos/modulo1/modulo1-tema1.png"
+                        alt="Modulo1 Tema1">
+                </div>
+                <div class="titulo-m1tema1 p-2">Alfabeto</div>
+                <div class="conteudo-mod1-tem1">
+                </div>
+            </i>
             <i class="item-modulo1-tema2 position-relative d-flex flex-column mb-2">
                 <div class="img-m1tema2 p-2"><img src="../../assets/img/icones-modulos/modulo1/modulo1-tema2.png"
                         alt="Modulo1 Tema2">
@@ -154,19 +147,22 @@
         </div>
         <div class="grid-musica"> <!-- Responsável por Listar os módulos -->
             <i class="item-musica1 position-relative d-flex flex-column mb-2">
-                <div class="img-musica1 p-2"><img src="../../assets/img/" alt="Musica1">
+                <div class="img-musica1 p-2"><img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png"
+                        alt="Musica1">
                 </div>
                 <div class="titulo-musica1 p-2">Musica1</div>
             </i>
             <i class="item-musica2 position-relative d-flex flex-column mb-2">
-                <div class="img-musica2 p-2"><img src="../../assets/img/" alt="Musica2">
+                <div class="img-musica2 p-2"><img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png"
+                        alt="Musica2">
                 </div>
                 <div class="titulo-musica2 p-2">Musica2</div>
             </i>
             <i class="item-musica3 position-relative d-flex flex-column mb-2">
-                <div class="img-musica3 p-2"><img src="../../assets/img/" alt="Musica3">
-                    <div class="titulo-musica3 p-2">Musica3</div>
+                <div class="img-musica3 p-2"><img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png"
+                        alt="Musica2">
                 </div>
+                <div class="titulo-musica3 p-2">Musica3</div>
             </i>
         </div>
     </main>
@@ -177,22 +173,49 @@
         </div>
         <div class="grid-sinaiscast"> <!-- Responsável por Listar os módulos -->
             <i class="item-episodio1 position-relative d-flex flex-column mb-2">
-                <div class="img-episodio1 p-2"><img src="../../assets/img/" alt="Episodio1">
+                <div class="img-episodio1 p-2"><img
+                        src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="Episodio1">
                 </div>
                 <div class="titulo-episodio1 p-2">Episodio1</div>
             </i>
             <i class="item-episodio2 position-relative d-flex flex-column mb-2">
-                <div class="img-episodio2 p-2"><img src="../../assets/img/" alt="Episodio2">
+                <div class="img-episodio2 p-2"><img
+                        src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="Episodio2">
                 </div>
                 <div class="titulo-episodio2 p-2">Episodio2</div>
             </i>
             <i class="item-episodio3 position-relative d-flex flex-column mb-2">
-                <div class="img-episodio3 p-2"><img src="../../assets/img/" alt="Episodio3">
-                    <div class="titulo-episodio3 p-2">Episodio3</div>
+                <div class="img-episodio3 p-2"><img
+                        src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="Episodio2">
                 </div>
+                <div class="titulo-episodio3 p-2">Episodio3</div>
             </i>
         </div>
     </main>
+
+    <main class="Main-Modal">
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal-alfabeto d-flex justify-content-around">
+                <button class="fechar" id="fechar">X</button>
+                <div class="div-modal-alfabeto-video">
+                    <iframe width="820" height="575"
+                        src="https://www.youtube-nocookie.com/embed/t_WQ8enK7Lg?si=pYGR9T5zz0A-Pjfp"
+                        title="Video Modulo 1 Tema 1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="div-modal-alfabeto-conteudo d-flex flex-column mb-3 ">
+                    <h1 class="titulo-modal-alfabeto">Alfabeto</h1>
+                    <i class="p-2">Assunto 1</i>
+                    <i class="p-2">Exercício</i>
+                    <i class="p-2">Assunto 2</i>
+                    <i class="p-2">Assunto 3</i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../pages/main/func.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>

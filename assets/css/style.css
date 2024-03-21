@@ -265,6 +265,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  z-index: 1;
 }
 
 /* Modulo 1 */
@@ -274,20 +275,21 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-modulo1-tema1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .titulo-m1tema1 {
@@ -298,8 +300,8 @@ body {
 
 .item-modulo1-tema2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -320,8 +322,8 @@ body {
 
 .item-modulo1-tema3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -337,8 +339,8 @@ body {
 
 .item-modulo1-tema4 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -358,15 +360,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
 }
 
 .item-modulo2-tema1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -382,8 +384,8 @@ body {
 
 .item-modulo2-tema2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -399,8 +401,8 @@ body {
 
 .item-modulo2-tema3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -416,8 +418,8 @@ body {
 
 .item-modulo2-tema4 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -437,15 +439,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-modulo3-tema1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -461,8 +463,8 @@ body {
 
 .item-modulo3-tema2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -483,8 +485,8 @@ body {
 
 .item-modulo3-tema3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -500,8 +502,8 @@ body {
 
 .item-modulo3-tema4 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -521,15 +523,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
 }
 
 .item-modulo4-tema1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -545,8 +547,8 @@ body {
 
 .item-modulo4-tema2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -562,8 +564,8 @@ body {
 
 .item-modulo4-tema3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -579,8 +581,8 @@ body {
 
 .item-modulo4-tema4 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -594,11 +596,14 @@ body {
   font-style: normal;
 }
 
+/* Divisor do Mod4 e Musicas */
+
 .div-divisor {
-  margin-left: 50px;
-  margin-right: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #746efe;
-  width: 1130px;
+  width: 1200px;
   height: 5px;
   border-radius: 40px;
 }
@@ -620,15 +625,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-musica1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -644,8 +649,8 @@ body {
 
 .item-musica2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -661,8 +666,8 @@ body {
 
 .item-musica3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -681,7 +686,7 @@ body {
 .grid-sinaiscast {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px;
+  grid-template-rows: 150px 200px;
   place-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -693,15 +698,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 60px;
+  font-size: 85px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-episodio1 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -717,8 +722,8 @@ body {
 
 .item-episodio2 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -734,8 +739,8 @@ body {
 
 .item-episodio3 {
   margin-top: 150px;
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -747,4 +752,76 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+
+/* Janelas Modais de Cada Módulo */
+
+.janela-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.281);
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.titulo-modal-alfabeto {
+  font-family: "Style Script", cursive;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 70px;
+}
+
+.modal-alfabeto {
+  color: white;
+  font-size: 30px;
+  width: 60%;
+  min-width: 80vw;
+  min-height: 60vh;
+  background-color: #7d48e8da;
+  backdrop-filter: blur(25px);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.div-modal-alfabeto-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+
+.div-modal-alfabeto-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.fechar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.janela-modal.abrir {
+  display: flex;
+}
+
+.abrir .modal {
+  animation: abrirmodal 1s;
 }

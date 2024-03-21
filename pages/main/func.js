@@ -1,6 +1,10 @@
-const button = document.querySelector("");
-const modal = document.querySelector("dialog");
+function abrirModal() {
+  const modal = document.getElementById("janela-modal");
+  modal.classList.add("abrir");
 
-button.onclick = function () {
-  modal.showModal();
-};
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "fechar" || e.target.id == "janela-modal") {
+      modal.classList.remove("abrir");
+    }
+  });
+}

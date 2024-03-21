@@ -19,7 +19,7 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -31,7 +31,7 @@
 
 .button-secao-principal:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -64,17 +64,24 @@
 
 .button-main-voltar {
   width: 160px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
   margin: 20px;
   height: 55px;
   text-align: center;
   border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  align-items: center;
+  margin-left: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+  border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -82,10 +89,11 @@
 
 .button-main-voltar:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  transform: scale(1.05);
 }
 
 .button-main-voltar:focus {
@@ -95,23 +103,10 @@
 .button-main-voltar {
   background-image: linear-gradient(
     to right,
-    #eb3941,
-    #f15e64,
-    #e14e53,
-    #e2373f
+    #6e99ff,
+    #a154ff,
+    #3897ff,
+    #7c58fe
   );
-  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
-}
-
-/* Main */
-
-.button-mod1-tem1 {
-  background-color: #e5d6ff;
-  border: none;
-  margin-top: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 190px;
-  height: 190px;
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
