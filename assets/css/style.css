@@ -264,6 +264,7 @@ body {
   place-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin: 5vw;
   font-style: normal;
   z-index: 1;
 }
@@ -275,15 +276,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-modulo1-tema1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -295,35 +296,33 @@ body {
 .titulo-m1tema1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo1-tema2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.img-m1tema2 {
-  height: 136px;
-  width: 175px;
+  cursor: pointer;
 }
 
 .titulo-m1tema2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo1-tema3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -334,13 +333,14 @@ body {
 .titulo-m1tema3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo1-tema4 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -351,6 +351,7 @@ body {
 .titulo-m1tema4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -360,15 +361,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
 }
 
 .item-modulo2-tema1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -379,13 +380,14 @@ body {
 .titulo-m2tema1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo2-tema2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -396,13 +398,14 @@ body {
 .titulo-m2tema2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo2-tema3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -413,13 +416,14 @@ body {
 .titulo-m2tema3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo2-tema4 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -430,6 +434,7 @@ body {
 .titulo-m2tema4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -439,15 +444,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-modulo3-tema1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -458,13 +463,14 @@ body {
 .titulo-m3tema1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo3-tema2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -472,21 +478,17 @@ body {
   align-items: center;
 }
 
-.img-m3tema2 {
-  height: 136px;
-  width: 175px;
-}
-
 .titulo-m3tema2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo3-tema3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -497,13 +499,14 @@ body {
 .titulo-m3tema3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo3-tema4 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -514,6 +517,7 @@ body {
 .titulo-m3tema4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -523,15 +527,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
 }
 
 .item-modulo4-tema1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -542,13 +546,14 @@ body {
 .titulo-m4tema1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo4-tema2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -559,13 +564,14 @@ body {
 .titulo-m4tema2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo4-tema3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -576,23 +582,26 @@ body {
 .titulo-m4tema3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-modulo4-tema4 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .titulo-m4tema4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -603,7 +612,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #746efe;
-  width: 1200px;
+  width: 80vw;
   height: 5px;
   border-radius: 40px;
 }
@@ -618,6 +627,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 5vw;
 }
 
 .titulo-musica {
@@ -625,15 +635,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-musica1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -644,13 +654,14 @@ body {
 .titulo-musica1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-musica2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -661,13 +672,14 @@ body {
 .titulo-musica2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-musica3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -678,6 +690,7 @@ body {
 .titulo-musica3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -691,6 +704,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 5vw;
 }
 
 .titulo-sinaiscast {
@@ -698,15 +712,15 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 85px;
+  font-size: 120px;
   color: #5e17eb;
   text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 .item-episodio1 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -717,13 +731,14 @@ body {
 .titulo-episodio1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-episodio2 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -734,13 +749,14 @@ body {
 .titulo-episodio2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 .item-episodio3 {
   margin-top: 150px;
-  height: 250px;
-  width: 250px;
+  height: 40vh;
+  width: 20vw;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -751,12 +767,13 @@ body {
 .titulo-episodio3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 30px;
   font-style: normal;
 }
 
 /* Janelas Modais de Cada Módulo */
 
-.janela-modal {
+.janela-modal-alfabeto {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -774,7 +791,11 @@ body {
   font-family: "Style Script", cursive;
   font-weight: 600;
   font-style: italic;
-  font-size: 70px;
+  font-size: 85px;
+}
+
+.texto-introdutorio-modal-alfabeto {
+  text-align: center;
 }
 
 .modal-alfabeto {
@@ -818,10 +839,32 @@ body {
   cursor: pointer;
 }
 
-.janela-modal.abrir {
+.janela-modal-alfabeto.abrir {
   display: flex;
 }
 
 .abrir .modal {
   animation: abrirmodal 1s;
+}
+
+@media screen and (max-width: 1280px) {
+  /* MODULOS */
+  /* TITULOS */
+  .titulo-modulo1,
+  .titulo-modulo2,
+  .titulo-modulo3,
+  .titulo-modulo4 {
+    margin-top: 50px;
+    font-family: "Style Script", cursive;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 90px;
+    color: #5e17eb;
+    text-shadow: 0.1em 0.1em 0.2em white;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+    flex-direction: column;
+  }
 }
