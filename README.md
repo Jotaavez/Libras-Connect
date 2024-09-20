@@ -1,7 +1,3 @@
-Claro! Vou adicionar alguns detalhes que podem tornar o README ainda mais completo, como informações sobre os objetivos do projeto, tecnologias utilizadas e uma visão geral de como o usuário pode começar a usar o site. Aqui está a versão revisada com complementos:
-
----
-
 # **LibrasConnect: Sinais que Conectam**
 
 Bem-vindo(a) ao **LibrasConnect**, uma plataforma educacional inovadora para ensinar a **Língua Brasileira de Sinais (Libras)**. Criado para promover a inclusão e facilitar o aprendizado de Libras, o site atende a comunidade acadêmica do IFPA Campus Ananindeua e qualquer pessoa interessada em aprender essa linguagem.
