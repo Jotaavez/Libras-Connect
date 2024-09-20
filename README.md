@@ -1,23 +1,34 @@
-# **Libras Connect: Sinais que Conectam**
+Claro! Vou adicionar alguns detalhes que podem tornar o README ainda mais completo, como informações sobre os objetivos do projeto, tecnologias utilizadas e uma visão geral de como o usuário pode começar a usar o site. Aqui está a versão revisada com complementos:
 
-## **Aprenda Libras de Forma Dinâmica e Moderna!**
+---
 
-Seja bem-vindo(a) ao **Libras Connect**, o seu site de aprendizado da **Língua Brasileira de Sinais (Libras)**. Aqui, oferecemos uma experiência única para discentes e docentes da instituição IFPA Campus Ananindeua.
+# **LibrasConnect: Sinais que Conectam**
 
-### **Recursos**
+Bem-vindo(a) ao **LibrasConnect**, uma plataforma educacional inovadora para ensinar a **Língua Brasileira de Sinais (Libras)**. Criado para promover a inclusão e facilitar o aprendizado de Libras, o site atende a comunidade acadêmica do IFPA Campus Ananindeua e qualquer pessoa interessada em aprender essa linguagem.
 
-- **Vídeos Interativos**: Nossos vídeos são cuidadosamente produzidos para ensinar sinais de forma envolvente e prática. Aprenda com exemplos reais e contextos variados.
+## **Objetivo do Projeto**
 
-- **Módulos Temáticos**: Organizamos o conteúdo em módulos específicos, permitindo que você avance no seu próprio ritmo. Desde o básico até tópicos avançados, temos tudo o que você precisa.
+O **LibrasConnect** tem como missão capacitar pessoas no uso da Libras, promovendo a inclusão social e derrubando barreiras de comunicação. Nossa plataforma oferece uma abordagem prática e acessível, combinando tecnologia e educação em um único ambiente.
 
-- **Design Responsivo**: Desenvolvemos o **Libras Connect** utilizando as linguagens **HTML, CSS e JavaScript (com Bootstrap)**. Isso significa que nosso site é totalmente responsivo, adaptando-se perfeitamente a dispositivos móveis, tablets e desktops.
+## **Funcionalidades**
 
-### **Suporte**
+- **Vídeos Interativos**: Aulas em vídeo que demonstram sinais de maneira clara, com exemplos práticos e situações do dia a dia.
+- **Módulos Temáticos**: O conteúdo é dividido em módulos que cobrem desde o básico até tópicos avançados, permitindo que os usuários avancem conforme seu nível de conhecimento.
+- **Exercícios Práticos**: Cada módulo inclui atividades interativas para reforçar o aprendizado e testar seus conhecimentos.
 
-- **Suporte Personalizado**: Nossa equipe está pronta para ajudar. Se você tiver alguma dificuldade ou precisar de orientação, conte conosco.
+## **Tecnologias Utilizadas**
 
-- **Contato:** <a href="librasconnect@gmail.com">librasconnect@gmail.com<a/>
+- **Frontend**: HTML, CSS.
+- **Backend**: JavaScript.
+- **Banco de Dados**: A decidir.
 
-### **Libras Connect: Sinais que Conectam**
+## **Suporte ao Usuário**
 
-Junte-se a nós nessa jornada de aprendizado e inclusão. Vamos quebrar barreiras e construir pontes através da linguagem dos sinais.
+- **Ajuda Personalizada**: Nossa equipe está pronta para oferecer suporte caso você tenha dúvidas ou dificuldades técnicas.
+- **Contato**: [librasconnect@gmail.com](mailto:librasconnect@gmail.com)
+
+## **Junte-se ao LibrasConnect**
+
+Participe desta jornada de aprendizado e inclusão. Com o **LibrasConnect**, aprender Libras nunca foi tão fácil. Juntos, podemos promover a acessibilidade e conectar pessoas através da linguagem dos sinais.
+
+---
