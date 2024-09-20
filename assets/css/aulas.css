@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* Suporte de acentuações */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* CSS da ../../pages/start */
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+/* Essa fonte é utilizada nos títulos dos módulos*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.2s;
+  }
+
+  :root {
+    --cor0: black;
+    --cor1: white;
+    --cor2: #E5D7FF;
+    --cor3: #7E48E8;
+    --cor4: #5E17EB;
+
+    --fonte0: "Poppins", Arial, Helvetica, sans-serif;
+    --fonte1: "Style Script", cursive;
+  }
+
+  /* Página inicial */
+  html{
+    scroll-behavior: smooth !important;
+    /* cursor: url(../img/cursor/pointer.png), auto; */
+  }
+
+  body{
+    font-family: var(--fonte0);
+    background-color: var(--cor2);
+
+    /* mudar para 1440px */
+    @media (min-width: 140px) {
+      & main {
+    & article.modulo {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h1 {
+          margin-top: 30px;
+          font-size: 7em;
+          font-family: var(--fonte1);
+          color: var(--cor4);
+          
+          display: flex;
+          justify-content: center;
+
+          text-shadow: 2px 2px 0px var(--cor1);
+        }
+
+        & ul {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          list-style: none;
+
+          & li.assuntos {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            background-color: var(--cor1);
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+
+            margin: 20px;
+            padding: 20px;
+
+            padding-bottom: 50px;
+
+            & picture {
+              margin-top: 20px;
+              margin-bottom: 60px;
+            }
+
+            & h2 {
+              font-size: 2em;
+              font-weight: 600;
+            }
+        }
+
+        & li.assuntos:hover {
+          cursor: pointer;
+          border-radius: 15px;
+          padding: 50px;
+          }
+        }
+      }
+    }
+  }
+}

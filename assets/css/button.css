@@ -1,112 +1,60 @@
-/* CSS Button da ../../pages/start */
+@charset "UTF-8";
 
-.button-secao-principal {
-  position: relative;
-  top: 250px;
-  left: -20px;
-  color: #fff;
-  width: 200px;
-  height: fit-content;
-  font-size: 25px;
-  margin: 20px;
-  height: 55px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  align-items: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform 200ms ease-in-out;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
+body#pginicial {
+  & main{
+    & article#home {
+    /* @media (max-width: 1459px) {
+      article#home { APAGAR, ESTÁ APRESENTANDO MAL FUNCIONAMENTOs
+        & aside{
+          & a button{
+            margin-top: 20px;
+            width: 10vw;
+            height: 5vh;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, var(--cor2), var(--cor3), var(--cor2));
+          }
+          & a button:hover{
+            animation-duration: 0.5s;
+            width: 12vw;
+            height: 6vh;
+            cursor: pointer;
+          }
+        }
+        }
+      }
+    } */
 
-.button-secao-principal:hover {
-  transform: scale(1.05);
-}
-
-.button-secao-principal:hover {
-  background-position: 100% 0;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.button-secao-principal:focus {
-  outline: none;
-}
-
-.button-secao-principal {
-  background-image: linear-gradient(
-    to right,
-    #6e99ff,
-    #a154ff,
-    #3897ff,
-    #7c58fe
-  );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-}
-
-/* CSS Button da ../../pages/main */
-
-.button-main-voltar {
-  box-shadow: 2.1px 1.7px 2.7px rgba(0, 0, 0, 0.037),
-    5.2px 4.3px 6.9px rgba(0, 0, 0, 0.051),
-    10.6px 8.7px 14.2px rgba(0, 0, 0, 0.063),
-    21.9px 17.9px 29.2px rgba(0, 0, 0, 0.079),
-    60px 49px 80px rgba(0, 0, 0, 0.13);
-}
-
-.button-main-voltar {
-  width: 160px;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align: center;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  align-items: center;
-  margin-left: 120px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform 200ms ease-in-out;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.button-main-voltar:hover {
-  background-position: 100% 0;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  transform: scale(1.05);
-}
-
-.button-main-voltar:focus {
-  outline: none;
-}
-
-.button-main-voltar {
-  background-image: linear-gradient(
-    to right,
-    #6e99ff,
-    #a154ff,
-    #3897ff,
-    #7c58fe
-  );
-  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+     /* mudar pra 1440px */
+    @media (min-width: 140px){
+    /* article#home { */
+      & aside {
+        & a button{
+            margin-top: 20px;
+            width: max-content;
+            padding: 7px;
+            height: max-content;
+            border: none;
+            border-radius: 18px;
+            font-size: 1.5em;
+            color: white;
+            font-weight: 550;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, var(--cor2), var(--cor3), var(--cor2));
+        }
+        & a button:hover{
+            animation-duration: 0.5s;
+            width: max-content;
+            height: max-content;
+            padding: 12px;
+            border-radius: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }

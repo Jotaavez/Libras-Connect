@@ -1,870 +1,294 @@
+@charset "UTF-8";
+/* Suporte de acentuações */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* CSS da ../../pages/start */
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
-/* Essa fonte é ultilizada nos titulos dos modulos*/
+/* Essa fonte é utilizada nos títulos dos módulos*/
 
-body {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+* {
+  margin: 0px;
+  padding: 0px;
+  transition-duration: 0.2s;
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+:root {
+  --cor0: black;
+  --cor1: white;
+  --cor2: #5e17eb;
+  --cor3: #746efe;
+  --cor4: #6233c0;
+  --cor5: #2e2c33;
+
+  --fonte0: "Poppins", Arial, Helvetica, sans-serif;
+  --fonte1: "Style Script", cursive;
 }
 
-.div-secao-principal {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 1.jpg);
-  background-color: #e5e5e5;
-  height: fit-content;
-  min-height: 1000px;
-  background-size: cover;
-  background-position: center;
-  color: black;
-  align-items: center;
+/* Página inicial */
+html {
+  scroll-behavior: smooth !important;
 }
 
-@media screen and (max-width: 1000px) {
-  .div-secao-principal {
+body#pginicial {
+  font-family: var(--fonte0);
+
+  /* configurações do header */
+  & header {
+    padding: 0px 20px 0px 20px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0)
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    flex-direction: column;
+    /* essas configurações deixa ele fixo no topo da tela */
+    height: 7vh;
+
+    & nav a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    & nav a:hover {
+      padding: 10px;
+      background-color: #6233c0e1;
+      color: var(--cor1);
+      border-radius: 20px;
+    }
   }
-}
 
-.div-meio {
-  width: 100%;
-  height: 600px;
-  top: 100px;
-  left: 30%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  position: absolute;
-  margin-left: -250px;
-}
-
-.img-mascote {
-  width: 70%;
-  height: 700px;
-  max-width: 800px;
-  min-width: 700px;
-  margin-right: 50px;
-}
-
-.div-libras {
-  width: 50%;
-  height: 50px;
-  font-size: 120px;
-  line-height: 95px;
-  font-weight: 400;
-  position: absolute;
-}
-
-.div-sinais {
-  margin-top: 60px;
-  width: 100%;
-  height: 100px;
-  font-size: 35px;
-  line-height: 320px;
-  position: absolute;
-}
-
-.div-secao-ajuda {
-  width: fit-content;
-  height: fit-content;
-  min-height: 1000px;
-  color: rgb(255, 255, 255);
-  background-color: white;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 1000px) {
-  .div-secao-ajuda {
-    width: 100%;
-    flex-direction: column;
+  /* cada uma dessas mídias deixa o header em um formato diferente, de acordo com o tamanho da tela  */
+  @media (max-width: 400px) {
+    header {
+      display: none;
+    }
   }
-}
 
-.div-titulo-ajuda {
-  color: black;
-  margin-top: 60px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 80px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-}
+  @media (max-width: 1459px) {
+    header {
+      & nav {
+        margin-right: 5%;
+        & a {
+          color: var(--cor5);
+          font-size: 1em;
+          margin: 0px 5px 0px 10px;
+        }
+      }
+      & a#logo {
+        cursor: auto;
+        margin: auto;
+        margin-left: 0px;
+      }
+    }
+  }
 
-.div-perguntas {
-  color: black;
-  margin-top: 20px;
-  margin-left: 90px;
-  margin-right: 80px;
-}
+  @media (min-width: 1460px) {
+    header {
+      & nav {
+        margin-right: 2%;
+        & a {
+          color: var(--cor5);
+          font-size: 1.1em;
+          margin: 0px 10px 0px 10px;
+        }
+      }
+      & a#logo {
+        margin: auto;
+        margin-left: 0px;
+        cursor: auto;
+      }
+    }
+  }
 
-.div-titulo-pergunta {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 25px;
-  text-transform: uppercase;
-}
+  & main {
+    height: 100%;
 
-.div-texto-pergunta {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+    & article#home {
+      height: 100vh;
+      background-image: url(../img/fundo/gradiante_librasPrancheta\ 1.jpg);
+      background-size: cover;
 
-.div-secao-projeto {
-  width: fit-content;
-  height: fit-content;
-  background-image: url(../../assets/img/fundo/gradiante_librasPrancheta\ 2.jpg);
-  background-color: #e5e5e5;
-  min-height: 1000px;
-  background-size: cover;
-  background-position: center;
-  color: black;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.div-projeto-titulo {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 100px;
-  text-transform: uppercase;
-  margin-left: 150px;
-  margin-top: 400px;
-  margin-right: 50px;
-}
+    /* MEDIA PARA ARRUMAR */
+    @media (min-width: 300px) and (max-width: 919px) {
+      article#home {
+        & aside {
+          margin: auto;
+          & h1 {
+            font-size: 10vw;
+            width: 2em;
+            line-height: 0.8em;
+            font-weight: 400;
+          }
+          & h2 {
+            font-size: 4vw;
+            font-weight: normal;
+          }
+        }
+        & picture {
+          margin: auto;
+          width: 60vw;
+          justify-content: center;
+        }
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
 
-.div-projeto-conteudo {
-  align-items: center;
-  margin-top: 250px;
-  width: fit-content;
-  height: fit-content;
-  max-width: 800px;
-  background-color: #ffffff;
-  border-radius: 50px;
-}
+    @media (min-width: 920px) and (max-width: 1459px) {
+      article#home {
+        & aside {
+          margin: auto;
+          & h1 {
+            font-size: 6.5em;
+            width: 2em;
+            line-height: 0.8em;
+            font-weight: 400;
+          }
+          & h2 {
+            font-size: 2em;
+            font-weight: normal;
+          }
+        }
+        & picture {
+          margin: auto;
+        }
+      }
+    }
+    @media (min-width: 1460px) {
+      article#home {
+        & aside {
+          margin: auto;
+          & h1 {
+            font-size: 8em;
+            width: 2em;
+            line-height: 0.8em;
+            font-weight: 500;
+          }
+          & h2 {
+            font-size: 2.5em;
+            font-weight: normal;
+          }
+        }
+        & picture {
+          margin: auto;
+        }
+      }
+    }
+    article#ajuda {
+      height: 100vh;
+      & h1,
+      aside h2 {
+        text-transform: uppercase;
+      }
+      & h1 {
+        margin-top: 10vh;
+        font-size: 5em;
+        display: flex;
+        justify-content: center;
+      }
+      & aside {
+        padding: 0.1vw 10vw 1vw 10vw;
+        & h2 {
+          font-size: 2em;
+          margin-top: 30px;
+        }
+        & p {
+          font-size: 1.5em;
+        }
+      }
+    }
+    & article#projeto {
+      background-image: url(../img/fundo/gradiante_librasPrancheta\ 2.jpg);
+      background-size: cover;
+      height: 100vh;
 
-.div-projeto-texto {
-  margin-top: 35px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-}
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-@media screen and (max-width: 1250px) {
-  .div-projeto-titulo {
+      & h1 {
+        text-transform: uppercase;
+        font-size: 7em;
+        font-weight: 600;
+      }
+
+      & aside {
+        background-color: var(--cor1);
+        height: 50vh;
+        width: 40vw;
+        border-radius: 40px;
+        padding: 35px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.292);
+
+        & p {
+          text-align: center;
+          font-size: 1.7em;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    & article#sobre {
+      height: 100vh;
+      & h1 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 5em;
+        text-transform: uppercase;
+      }
+
+      & aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & div#div-provisoria {
+          background-color: var(--cor5);
+          width: 650px;
+          height: 650px;
+        }
+
+        & p {
+          display: flex;
+          align-items: center;
+
+          font-size: 1.8em;
+          text-align: center;
+          width: 40vw;
+          height: 50vh;
+        }
+      }
+    }
+  }
+  & footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .div-secao-projeto {
-    width: 100%;
-    flex-direction: column;
-  }
-  .div-projeto-conteudo {
-    margin-bottom: 100px;
-    margin-left: 30px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.div-secao-sobre {
-  width: fit-content;
-  height: fit-content;
-  min-height: 1000px;
-  color: rgb(255, 255, 255);
-  background-color: white;
-  width: 100%;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 850px) {
-  .div-secao-sobre {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-.div-sobre-titulo {
-  margin-top: 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 50px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: black;
-}
-
-.div-sobre-conteudo {
-  color: black;
-  margin-top: 200px;
-}
-.div-sobre-imagem {
-  margin-top: -100px;
-  display: flex;
-}
-
-.img-sobre {
-  margin-top: -70px;
-  margin-left: 50px;
-  width: 700px;
-  height: 700px;
-}
-
-.div-sobre-texto {
-  margin-top: 35px;
-  margin-left: -90px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  width: 800px;
-  height: 450px;
-}
-
-/* CSS da ../../pages/main */
-.body-modulos {
-  background-color: #e5d7ff;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  margin: 5vw;
-  font-style: normal;
-  z-index: 1;
-}
-
-/* Modulo 1 */
-
-.titulo-modulo1 {
-  margin-top: 50px;
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.1em 0.1em 0.2em white;
-}
-
-.item-modulo1-tema1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.titulo-m1tema1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo1-tema2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.titulo-m1tema2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo1-tema3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m1tema3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo1-tema4 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m1tema4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* Modulo 2 */
-
-.titulo-modulo2 {
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
-}
-
-.item-modulo2-tema1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m2tema1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo2-tema2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m2tema2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo2-tema3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m2tema3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo2-tema4 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m2tema4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* Modulo 3 */
-
-.titulo-modulo3 {
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.1em 0.1em 0.2em white;
-}
-
-.item-modulo3-tema1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m3tema1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo3-tema2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m3tema2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo3-tema3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m3tema3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo3-tema4 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m3tema4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* Modulo 4 */
-
-.titulo-modulo4 {
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.2em 0.2em 0.2em rgb(255, 255, 255);
-}
-
-.item-modulo4-tema1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m4tema1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo4-tema2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m4tema2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo4-tema3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-m4tema3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-modulo4-tema4 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.titulo-m4tema4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* Divisor do Mod4 e Musicas */
-
-.div-divisor {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #746efe;
-  width: 80vw;
-  height: 5px;
-  border-radius: 40px;
-}
-
-/* Musica */
-
-.grid-musica {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 5vw;
-}
-
-.titulo-musica {
-  margin-top: 50px;
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.1em 0.1em 0.2em white;
-}
-
-.item-musica1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-musica1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-musica2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-musica2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-musica3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-musica3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* SinaisCast */
-
-.grid-sinaiscast {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 150px 200px;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 5vw;
-}
-
-.titulo-sinaiscast {
-  margin-top: 50px;
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 120px;
-  color: #5e17eb;
-  text-shadow: 0.1em 0.1em 0.2em white;
-}
-
-.item-episodio1 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-episodio1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-episodio2 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-episodio2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-.item-episodio3 {
-  margin-top: 150px;
-  height: 40vh;
-  width: 20vw;
-  background-color: #ffffff;
-  border-radius: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-episodio3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  font-style: normal;
-}
-
-/* Janelas Modais de Cada Módulo */
-
-.janela-modal-alfabeto {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.281);
-  backdrop-filter: blur(5px);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.titulo-modal-alfabeto {
-  font-family: "Style Script", cursive;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 85px;
-}
-
-.texto-introdutorio-modal-alfabeto {
-  text-align: center;
-}
-
-.modal-alfabeto {
-  color: white;
-  font-size: 30px;
-  width: 60%;
-  min-width: 80vw;
-  min-height: 60vh;
-  background-color: #7d48e8da;
-  backdrop-filter: blur(25px);
-  padding: 50px;
-  border-radius: 20px;
-}
-
-.div-modal-alfabeto-conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 50%;
-}
-
-.div-modal-alfabeto-video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 100px;
-}
-
-.fechar {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  border: none;
-  background-color: brown;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.janela-modal-alfabeto.abrir {
-  display: flex;
-}
-
-.abrir .modal {
-  animation: abrirmodal 1s;
-}
-
-@media screen and (max-width: 1280px) {
-  /* MODULOS */
-  /* TITULOS */
-  .titulo-modulo1,
-  .titulo-modulo2,
-  .titulo-modulo3,
-  .titulo-modulo4 {
-    margin-top: 50px;
-    font-family: "Style Script", cursive;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 90px;
-    color: #5e17eb;
-    text-shadow: 0.1em 0.1em 0.2em white;
-  }
-  .grid {
-    width: 100%;
-    flex-direction: column;
-    flex-direction: column;
+    background-color: var(--cor4);
+    background-image: url(../img/fundo/gradiante_librasPrancheta\ 3.jpg);
+    color: var(--cor1);
+    padding: 5px;
+
+    & strong {
+      font-family: var(--fonte1);
+      font-size: 1.5em;
+    }
   }
 }
