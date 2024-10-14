@@ -28,7 +28,7 @@ html {
   /* cursor: url(../img/cursor/pointer.png), auto; */
 }
 
-body {
+body#pgaulas {
   font-family: var(--fonte0);
   background-color: var(--cor2);
 
