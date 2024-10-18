@@ -32,8 +32,30 @@ body#pgaulas {
   font-family: var(--fonte0);
   background-color: var(--cor2);
 
-  /* mudar para 1440px */
-  @media (min-width: 140px) {
+  /* mudar para 1008px */
+  @media (min-width: 1008px) {
+    & div.pre-carregamento {
+      width: 100%;
+      min-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      /* background-color: var(--cor1); */
+      background-color: #fcfcff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      transition: opacity 2.8s;
+
+      & img {
+        width: 20vw;
+        margin-bottom: 30px;
+      }
+    }
+
     & main {
       & article.modulo {
         height: max-content;

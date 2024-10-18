@@ -26,3 +26,12 @@ window.onclick = function(event) {
     document.getElementById("modal-video").src = ""; // Stop video
   }
 }
+
+const pre_car = document.querySelector("div.pre-carregamento");
+function preCarregamento() {
+
+  pre_car.style.opacity = "0";
+  setTimeout(() => {
+    pre_car.style.display = "none";
+  }, 2800);
+}

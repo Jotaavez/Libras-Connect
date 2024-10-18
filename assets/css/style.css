@@ -149,7 +149,7 @@ body#pginicial {
       }
     }
 
-    @media (min-width: 920px) and (max-width: 1459px) {
+    @media (min-width: 920px) and (max-width: 1007px) {
       article#home {
         & aside {
           margin: auto;
@@ -169,7 +169,7 @@ body#pginicial {
         }
       }
     }
-    @media (min-width: 1460px) {
+    @media (min-width: 1008px) {
       article#home {
         & aside {
           margin: auto;

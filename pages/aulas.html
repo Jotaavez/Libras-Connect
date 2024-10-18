@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libras Connect</title>
-    <link rel="stylesheet" href="../../assets/css/aulas.css">
-    <link rel="stylesheet" href="../../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/aulas.css">
+    <link rel="stylesheet" href="..//assets/css/button.css">
 
     <script src="func.js" defer></script>
 
     <!-- caminho de favicon provisorio -->
-    <link rel="shortcut icon" href="../../assets/img/logo/logo-libas-connect-100px.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/logo/logo-libas-connect-100px.png" type="image/x-icon">
 </head>
 
-<body id="pgaulas">
+<!-- onload= quando a página estiver totalmente carregada -->
+
+<body id="pgaulas" onload="preCarregamento();">
+
+    <div class="pre-carregamento">
+        <img src="../assets/img/Carregamento/loading.gif" alt="Loading...">
+        <p>Carregando...</p>
+    </div>
+
     <header>
-        <a href="../../home.html">
+        <a href="../home.html">
             <button>
                 <p>
                     Voltar
@@ -36,7 +44,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo1/modulo1-tema1.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo1/modulo1-tema1.png" alt="">
                     </picture>
 
                     <h2>
@@ -48,7 +56,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo1/modulo1-tema2.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo1/modulo1-tema2.png" alt="">
                     </picture>
 
                     <h2>
@@ -60,7 +68,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo1/modulo1-tema3.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo1/modulo1-tema3.png" alt="">
                     </picture>
 
                     <h2>
@@ -72,7 +80,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo1/modulo1-tema4.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo1/modulo1-tema4.png" alt="">
                     </picture>
 
                     <h2>
@@ -92,7 +100,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo2/modulo2-tema1.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo2/modulo2-tema1.png" alt="">
                     </picture>
 
                     <h2>
@@ -104,7 +112,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo2/modulo2-tema2.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo2/modulo2-tema2.png" alt="">
                     </picture>
 
                     <h2>
@@ -116,7 +124,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo2/modulo2-tema3.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo2/modulo2-tema3.png" alt="">
                     </picture>
 
                     <h2>
@@ -128,7 +136,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo2/modulo2-tema4.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo2/modulo2-tema4.png" alt="">
                     </picture>
 
                     <h2>
@@ -148,7 +156,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo3/modulo3-tema1.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo3/modulo3-tema1.png" alt="">
                     </picture>
 
                     <h2>
@@ -160,7 +168,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo3/modulo3-tema2.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo3/modulo3-tema2.png" alt="">
                     </picture>
 
                     <h2>
@@ -172,7 +180,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo3/modulo3-tema3.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo3/modulo3-tema3.png" alt="">
                     </picture>
 
                     <h2>
@@ -184,7 +192,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo3/modulo3-tema4.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo3/modulo3-tema4.png" alt="">
                     </picture>
 
                     <h2>
@@ -204,7 +212,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo4/modulo4-tema1.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo4/modulo4-tema1.png" alt="">
                     </picture>
 
                     <h2>
@@ -216,7 +224,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo4/modulo4-tema2.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo4/modulo4-tema2.png" alt="">
                     </picture>
 
                     <h2>
@@ -228,7 +236,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo4/modulo4-tema3.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo4/modulo4-tema3.png" alt="">
                     </picture>
 
                     <h2>
@@ -240,7 +248,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/modulo4/modulo4-tema4.png" alt="">
+                        <img src="../assets/img/icones-modulos/modulo4/modulo4-tema4.png" alt="">
                     </picture>
 
                     <h2>
@@ -260,7 +268,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
+                        <img src="../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
                     </picture>
 
                     <h2>
@@ -272,7 +280,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
+                        <img src="../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
                     </picture>
 
                     <h2>
@@ -284,7 +292,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
+                        <img src="../assets/img/icones-modulos/Musicas/icone-Musicas.png" alt="">
                     </picture>
 
                     <h2>
@@ -304,7 +312,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
+                        <img src="../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
                     </picture>
 
                     <h2>
@@ -316,7 +324,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
+                        <img src="../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
                     </picture>
 
                     <h2>
@@ -328,7 +336,7 @@
                     <picture>
                         <source media="(max-width: 500px)" srcset="">
                         <source media="(max-width: 1200px)" srcset="">
-                        <img src="../../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
+                        <img src="../assets/img/icones-modulos/SinaisCast/icone-SinaisCast.png" alt="">
                     </picture>
 
                     <h2>
