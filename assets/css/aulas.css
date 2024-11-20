@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 /* Suporte de acentuações */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -91,20 +92,36 @@ body#pgaulas {
           list-style: none;
 
           & li.assuntos {
+            flex: 1 1 calc(25% - 40px); /* Cada coluna ocupa 25% menos margens */
+            max-width: calc(25% - 40px); /* Garante que o tamanho máximo respeite 4 colunas */
+            margin: 20px; /* Espaçamento entre os itens */
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-
+        
             background-color: var(--cor1);
             height: 250px;
-            width: 250px;
             border-radius: 20px;
-
-            margin: 20px;
             padding: 20px;
-
             padding-bottom: 50px;
+          }
+        
+          /* Responsividade para telas menores */
+          @media (max-width: 768px) {
+            & li.assuntos {
+              flex: 1 1 calc(50% - 40px); /* Reduz para 2 colunas em telas menores */
+              max-width: calc(50% - 40px);
+            }
+          }
+        
+          @media (max-width: 480px) {
+            & li.assuntos {
+              flex: 1 1 100%; /* Ocupa 100% em telas muito pequenas */
+              max-width: 100%;
+            }
+          }
+        }
 
             & picture {
               display: flex;
