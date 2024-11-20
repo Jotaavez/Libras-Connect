@@ -14,35 +14,24 @@ function openModal(modulo, videoUrl) {
 }
 
 // Close modal on 'X' click
-closeBtn.onclick = function () {
+closeBtn.onclick = function() {
   modal.style.display = "none";
   document.getElementById("modal-video").src = ""; // Stop video
-};
+}
 
 // Close modal when clicking outside the modal content
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.getElementById("modal-video").src = ""; // Stop video
   }
-};
+}
 
-// Preloading animation
 const pre_car = document.querySelector("div.pre-carregamento");
 function preCarregamento() {
+
   pre_car.style.opacity = "0";
   setTimeout(() => {
     pre_car.style.display = "none";
   }, 2800);
 }
-
-// Functionality to switch videos inside the modal
-const videoButtons = document.querySelectorAll("#video-options button");
-
-// Add event listeners to video buttons
-videoButtons.forEach((button) => {
-  button.addEventListener("click", function () {
-    const videoUrl = this.getAttribute("data-video-url"); // Get the URL from the button
-    document.getElementById("modal-video").src = videoUrl; // Update the iframe src
-  });
-});
