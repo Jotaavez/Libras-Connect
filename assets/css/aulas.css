@@ -132,6 +132,12 @@ body#pgaulas {
             }
           }
 
+          & li.assuntos.ex {
+            & h2 {
+              font-size: 1.5em;
+            }
+          }
+
           & li.assuntos:hover {
             cursor: pointer;
             border-radius: 15px;
