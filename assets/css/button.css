@@ -66,9 +66,8 @@ body#pginicial {
 
 body#pgaulas {
   & header {
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    align-items: normal;
+    margin-left: 7vh;
     & a button {
       margin-top: 20px;
       width: max-content;
